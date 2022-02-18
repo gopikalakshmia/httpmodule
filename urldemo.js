@@ -1,0 +1,10 @@
+let urlRef=require("url");
+let urlMsg="http://www.google.com:80/hello?name=Ravi&age=21";
+let urlData=urlRef.parse(urlMsg,true);
+console.log(urlData);
+console.log(urlData.port);
+console.log(urlData.hostname);
+console.log(urlData.query);
+let user=urlData.query;
+console.log("name  : "+user.name);
+console.log("age : "+user.age);
